@@ -7,7 +7,7 @@ export const Notes = ({ notes, onRemove }) => (
       <CSSTransition
         key={ note.id }
         classNames={ 'note' }
-        timeout={ 800 }
+        timeout={ 1000 }
       >
         <li className="list-group-item note">
           <div>

@@ -6,8 +6,6 @@ export const Notes = ({ notes, onRemove }) => (
     {notes.map(note => (
       <CSSTransition
         key={ note.id }
-        classNames={ 'note' }
-        timeout={ 800 }
       >
         <li className="list-group-item note">
           <div>

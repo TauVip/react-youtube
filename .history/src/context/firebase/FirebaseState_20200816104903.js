@@ -26,7 +26,7 @@ export const FirebaseState = ({ children }) => {
       }
     })
 
-    dispatch({ type: FETCH_NOTES, payload })
+    dispatch({type: FETCH_NOTES, payload})
   }
 
   const addNote = async title => {
@@ -41,7 +41,10 @@ export const FirebaseState = ({ children }) => {
         id: res.data.name
       }
 
-      dispatch({ type: ADD_NOTE, payload })
+      dispatch({
+        type: ADD_NOTE,
+        payload
+      })
     } catch(e) {
       throw new Error(e.message)
     }
